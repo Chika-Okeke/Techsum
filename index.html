@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>presentation</title>
+</head>
+<body>
+    <!-- page 1  -->
+    <section id="page-1" class="page">
+        <h1>Welcome!</h1>
+        <p>In the world of technology! In today’s fast-paced digital age, staying relevant and adapting to the ever-changing landscape of the tech industry is essential. Are you a beginner eager to embark on a journey of self-development? Stick around to discover how you can empower your growth within the fascinating world of technology!</p>
+
+     <div>
+        <a href="#page-2" class="btn btn-dark">
+         Next Page <i class="fa-solid fa-circle-arrow-down"></i>
+        </a>
+     </div>
+    </section>
+
+    <!-- page 2 -->
+       <section id="page-2" class="page" >
+        <h1> The Importance of Self-Development in Tech</h1>
+        <p>In the realm of technology, where advancements occur rapidly, the significance of self-development cannot be overstated. Continuous learning and upskilling are crucial to remain competitive and abreast of emerging trends. Self-development in tech goes beyond mastering new programming languages or tools; it involves cultivating problem-solving abilities, critical thinking, and adaptability. A tech professional committed to self-development becomes an asset, able to tackle complex challenges and drive innovation.</p>
+     <div>
+         <a href="#page-1" class="btn">
+             Prev Page <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+        <a href="#page-3" class="btn">
+         Next Page <i class="fa-solid fa-circle-arrow-down"></i>
+        </a>
+     </div>
+    </section>
+
+    <section id="page-3" class="page">
+        <h1>Setting Clear Goals and Objectives</h1>
+        <p>Setting clear, achievable goals is vital in the pursuit of self-development. Define short-term and long-term objectives aligned with your interests and aspirations in the tech world. Break down these goals into actionable steps, making the learning process more manageable and rewarding. Regularly reassess your progress and adjust your path as needed to ensure you stay on track to achieve your aspirations.
+        </p>
+
+     <div>
+         <a href="#page-2" class="btn btn-dark">
+             Prev Page <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+        <a href="#page-4" class="btn">
+         Next Page <i class="fa-solid fa-circle-arrow-down"></i>
+        </a>
+     </div>
+    </section>
+
+     <section id="page-4" class="page">
+        <h1>Continuous Learning and Skill Enhancement</h1>
+        <p>In the tech industry, there is always something new to learn. Engage in continuous learning through online courses, workshops, and attending tech conferences. Develop expertise in diverse areas, as this versatility enhances your adaptability and value in the job market. Explore specializations, such as artificial intelligence, cybersecurity, cloud computing, or user experience design, to stay ahead in the rapidly evolving tech ecosystem.</p>
+     <div>
+         <a href="#page-3" class="btn">
+             Prev Page <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+            <a href="#page-5" class="btn">
+                Next Page <i class="fa-solid fa-circle-arrow-down"></i>
+               </a>
+     </div>
+    </section>
+
+     <section id="page-5" class="page">
+        <h1>Networking and Collaboration</h1>
+        <p>Collaboration is an essential aspect of self-development in tech. Engage in networking events, join tech communities, and participate in hackathons or open-source projects. Collaborating with like-minded individuals fosters a culture of knowledge-sharing, encourages new perspectives, and enables you to learn from experienced professionals. Networking not only expands your knowledge but also opens doors to exciting opportunities</p>
+     <div>
+         <a href="#page-4" class="btn">
+             Prev Page <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+            <a href="#page-6" class="btn">
+                Next Page <i class="fa-solid fa-circle-arrow-down"></i>
+               </a>    
+     </div>
+    </section>
+
+    <section id="page-6" class="page">
+        <h1>To Sum it All Up...</h1>
+        <p>As we conclude our journey through self-development in tech, remember that it is not just a one-time effort but a continuous process. Embrace the joy of learning, stay curious, and remain committed to personal growth. By prioritizing self-development, you become an agile, innovative, and resilient tech professional, ready to shape the future of technology and make a positive impact on the world. So, seize the opportunities ahead, and let self-development propel you towards a fulfilling and successful career in the tech industry. </p>
+     <div>
+         <a href="#page-5" class="btn btn-dark">
+             Prev Page <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+     
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        // smooth scrolling
+        $('.btn').on('click', function(event) {
+            if (this.hash !== '') {
+              event.preventDefault();
+              const hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800);
+            }
+          });
+            </script>
+</body>
+</html>
